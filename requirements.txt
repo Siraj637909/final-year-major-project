@@ -1,0 +1,40 @@
+# Crypto Arbitrage Pro - Dependencies
+# Install: pip install -r requirements.txt
+
+# Core
+requests>=2.31.0
+aiohttp>=3.9.0
+websockets>=12.0
+
+# Web Dashboard
+flask>=3.0.0
+flask-socketio>=5.3.0
+flask-cors>=4.0.0
+
+# Database
+sqlalchemy>=2.0.0
+
+# Telegram Bot
+python-telegram-bot>=20.0
+
+# Utilities
+python-dotenv>=1.0.0
+schedule>=1.2.0
+rich>=13.0.0
+colorama>=0.4.6
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+
+# Deployment
+gunicorn>=21.2.0
+
+# Optional (for advanced features)
+# ccxt>=4.0.0  # Unified crypto API
+# ta-lib>=0.4.0  # Technical analysis

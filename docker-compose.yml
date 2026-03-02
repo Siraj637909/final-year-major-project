@@ -1,0 +1,66 @@
+# Crypto Arbitrage Pro - Docker Compose
+# Multi-container deployment configuration
+
+version: '3.8'
+
+services:
+  scanner:
+    build: .
+    container_name: crypto-arbitrage-scanner
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - ./config.json:/app/config.json
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN:-}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID:-}
+    networks:
+      - arbitrage-network
+    depends_on:
+      - dashboard
+
+  dashboard:
+    build: .
+    container_name: crypto-arbitrage-dashboard
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - FLASK_ENV=production
+    networks:
+      - arbitrage-network
+    command: python dashboard.py
+
+  # Optional: Redis for caching (production)
+  # redis:
+  #   image: redis:7-alpine
+  #   container_name: crypto-arbitrage-redis
+  #   restart: unless-stopped
+  #   volumes:
+  #     - redis-data:/data
+  #   networks:
+  #     - arbitrage-network
+
+  # Optional: PostgreSQL for production database
+  # postgres:
+  #   image: postgres:15-alpine
+  #   container_name: crypto-arbitrage-db
+  #   restart: unless-stopped
+  #   environment:
+  #     POSTGRES_DB: arbitrage
+  #     POSTGRES_USER: arbitrage
+  #     POSTGRES_PASSWORD: ${DB_PASSWORD:-changeme}
+  #   volumes:
+  #     - postgres-data:/var/lib/postgresql/data
+  #   networks:
+  #     - arbitrage-network
+
+volumes:
+  # redis-data:
+  # postgres-data:
+
+networks:
+  arbitrage-network:
+    driver: bridge

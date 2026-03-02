@@ -1,0 +1,47 @@
+{
+  "exchanges": ["binance", "coinbase", "kraken", "kucoin", "huobi"],
+  "pairs": [
+    "BTC/USDT",
+    "ETH/USDT",
+    "BNB/USDT",
+    "XRP/USDT",
+    "SOL/USDT",
+    "ADA/USDT",
+    "DOGE/USDT",
+    "MATIC/USDT",
+    "DOT/USDT",
+    "AVAX/USDT"
+  ],
+  "min_profit_percent": 0.1,
+  "check_interval_seconds": 5,
+  "telegram": {
+    "enabled": false,
+    "bot_token": "YOUR_BOT_TOKEN_HERE",
+    "chat_id": "YOUR_CHAT_ID_HERE"
+  },
+  "database": {
+    "type": "sqlite",
+    "path": "data/arbitrage.db"
+  },
+  "dashboard": {
+    "enabled": true,
+    "port": 5000,
+    "debug": false
+  },
+  "trading": {
+    "enabled": false,
+    "api_keys": {
+      "binance": {
+        "api_key": "YOUR_API_KEY",
+        "api_secret": "YOUR_API_SECRET"
+      },
+      "coinbase": {
+        "api_key": "YOUR_API_KEY",
+        "api_secret": "YOUR_API_SECRET",
+        "passphrase": "YOUR_PASSPHRASE"
+      }
+    },
+    "min_trade_amount_usdt": 100,
+    "max_trade_amount_usdt": 1000
+  }
+}
