@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crypto Arbitrage Pro - Real-time cryptocurrency arbitrage scanner and trading signal generator. Monitor 10+ exchanges instantly.">
+    <meta name="keywords" content="crypto, arbitrage, bitcoin, trading, scanner, cryptocurrency, blockchain, defi">
+    <meta name="author" content="Siraj Shaikh">
+    
+    <title>💰 Crypto Arbitrage Pro - Real-Time Arbitrage Scanner</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">💰</span>
+                <span class="logo-text">Crypto Arbitrage Pro</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#demo" class="nav-link">Live Demo</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#docs" class="nav-link">Docs</a></li>
+                <li><a href="https://github.com/Siraj637909/crypto-arbitrage-pro" target="_blank" class="nav-link nav-cta">
+                    <i class="fab fa-github"></i> GitHub
+                </a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span>Final Year Project 2026</span>
+                </div>
+                <h1 class="hero-title">
+                    Find Crypto Arbitrage Opportunities
+                    <span class="gradient-text">In Real-Time</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Monitor 10+ cryptocurrency exchanges simultaneously, detect price discrepancies, 
+                    and get instant alerts for profitable trading opportunities.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-primary">
+                        <i class="fas fa-play"></i> Try Live Demo
+                    </a>
+                    <a href="https://github.com/Siraj637909/crypto-arbitrage-pro" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">10+</span>
+                        <span class="stat-label">Exchanges</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">50+</span>
+                        <span class="stat-label">Trading Pairs</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">&lt;1s</span>
+                        <span class="stat-label">Detection Speed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">99.5%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="floating-card card-1">
+                        <div class="card-icon">📊</div>
+                        <div class="card-content">
+                            <div class="card-label">BTC/USDT</div>
+                            <div class="card-value">$50,150.00</div>
+                            <div class="card-change positive">+0.32%</div>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="card-icon">💹</div>
+                        <div class="card-content">
+                            <div class="card-label">Arbitrage Found</div>
+                            <div class="card-value">0.42%</div>
+                            <div class="card-change positive">Profit</div>
+                        </div>
+                    </div>
+                    <div class="floating-card card-3">
+                        <div class="card-icon">🔔</div>
+                        <div class="card-content">
+                            <div class="card-label">Alert Sent</div>
+                            <div class="card-value">Telegram</div>
+                            <div class="card-change">Instant</div>
+                        </div>
+                    </div>
+                    <div class="main-visual">
+                        <div class="exchange-grid">
+                            <div class="exchange-item binance">
+                                <i class="fas fa-circle"></i>
+                                <span>Binance</span>
+                                <span class="price">$50,000</span>
+                            </div>
+                            <div class="exchange-item coinbase">
+                                <i class="fas fa-circle"></i>
+                                <span>Coinbase</span>
+                                <span class="price">$50,150</span>
+                            </div>
+                            <div class="exchange-item kraken">
+                                <i class="fas fa-circle"></i>
+                                <span>Kraken</span>
+                                <span class="price">$49,950</span>
+                            </div>
+                            <div class="exchange-item kucoin">
+                                <i class="fas fa-circle"></i>
+                                <span>KuCoin</span>
+                                <span class="price">$50,050</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-animation">
+            <div class="grid-bg"></div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-section">
+        <div class="container">
+            <p class="trusted-text">Built with modern technologies</p>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>FastAPI</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>SQLite</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>WebSocket</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">✨ Features</span>
+                <h2 class="section-title">Everything You Need for Arbitrage Trading</h2>
+                <p class="section-subtitle">
+                    Powerful features to help you find and act on arbitrage opportunities instantly
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Real-Time Scanning</h3>
+                    <p>Monitor prices across 10+ exchanges with sub-second latency via WebSocket connections.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> WebSocket API integration</li>
+                        <li><i class="fas fa-check"></i> Sub-second updates</li>
+                        <li><i class="fas fa-check"></i> 50+ trading pairs</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Smart Detection</h3>
+                    <p>Advanced algorithms detect profitable opportunities after calculating all fees and spreads.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Fee calculation</li>
+                        <li><i class="fas fa-check"></i> Spread analysis</li>
+                        <li><i class="fas fa-check"></i> Profit optimization</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Instant Alerts</h3>
+                    <p>Get notified immediately via Telegram when profitable opportunities are detected.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Telegram integration</li>
+                        <li><i class="fas fa-check"></i> Customizable thresholds</li>
+                        <li><i class="fas fa-check"></i> Rate limiting</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Live Dashboard</h3>
+                    <p>Beautiful web interface with real-time charts, price comparisons, and opportunity feed.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Real-time updates</li>
+                        <li><i class="fas fa-check"></i> Interactive charts</li>
+                        <li><i class="fas fa-check"></i> Mobile responsive</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Historical Data</h3>
+                    <p>Store and analyze historical opportunities with SQLite database for backtesting.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Data logging</li>
+                        <li><i class="fas fa-check"></i> Export capabilities</li>
+                        <li><i class="fas fa-check"></i> Pattern analysis</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Easy Deployment</h3>
+                    <p>Deploy anywhere with Docker support. Works on local, VPS, or cloud platforms.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Docker ready</li>
+                        <li><i class="fas fa-check"></i> One-click deploy</li>
+                        <li><i class="fas fa-check"></i> Cloud compatible</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🔧 How It Works</span>
+                <h2 class="section-title">Simple Setup, Powerful Results</h2>
+                <p class="section-subtitle">
+                    Get started in minutes with our straightforward setup process
+                </p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Install Dependencies</h3>
+                        <p>Clone the repository and install Python packages</p>
+                        <div class="code-block">
+                            <code>git clone https://github.com/Siraj637909/crypto-arbitrage-pro.git</code>
+                            <code>pip install -r requirements.txt</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Configure Settings</h3>
+                        <p>Customize exchanges, trading pairs, and alert thresholds</p>
+                        <div class="code-block">
+                            <code>cp config.example.json config.json</code>
+                            <code># Edit with your preferences</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Start Scanning</h3>
+                        <p>Run the scanner and dashboard</p>
+                        <div class="code-block">
+                            <code>python main.py</code>
+                            <code>python dashboard.py</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Monitor & Trade</h3>
+                        <p>Watch opportunities appear and execute trades</p>
+                        <div class="code-block">
+                            <code>Open http://localhost:5000</code>
+                            <code># Get Telegram alerts instantly</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📊 Live Demo</span>
+                <h2 class="section-title">See It In Action</h2>
+                <p class="section-subtitle">
+                    Real-time arbitrage scanner dashboard
+                </p>
+            </div>
+            <div class="demo-container">
+                <div class="demo-preview">
+                    <div class="demo-header">
+                        <div class="demo-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="demo-title">crypto-arbitrage-pro - Dashboard</span>
+                    </div>
+                    <div class="demo-content">
+                        <div class="demo-stats">
+                            <div class="demo-stat">
+                                <span class="demo-stat-label">Total Scans</span>
+                                <span class="demo-stat-value" id="demo-scans">1,247</span>
+                            </div>
+                            <div class="demo-stat">
+                                <span class="demo-stat-label">Opportunities</span>
+                                <span class="demo-stat-value" id="demo-opps">52</span>
+                            </div>
+                            <div class="demo-stat">
+                                <span class="demo-stat-label">Avg Profit</span>
+                                <span class="demo-stat-value" id="demo-profit">0.18%</span>
+                            </div>
+                        </div>
+                        <div class="demo-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Pair</th>
+                                        <th>Buy</th>
+                                        <th>Sell</th>
+                                        <th>Profit</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="demo-table-body">
+                                    <tr>
+                                        <td>BTC/USDT</td>
+                                        <td>Kraken</td>
+                                        <td>Coinbase</td>
+                                        <td class="positive">+0.42%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ETH/USDT</td>
+                                        <td>Binance</td>
+                                        <td>KuCoin</td>
+                                        <td class="positive">+0.28%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SOL/USDT</td>
+                                        <td>Huobi</td>
+                                        <td>Binance</td>
+                                        <td class="positive">+0.35%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-actions">
+                    <a href="http://localhost:5000" target="_blank" class="btn btn-primary btn-large">
+                        <i class="fas fa-external-link-alt"></i> Open Full Dashboard
+                    </a>
+                    <p class="demo-note">Run `python dashboard.py` to start the local dashboard</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">💎 Pricing</span>
+                <h2 class="section-title">Free & Open Source</h2>
+                <p class="section-subtitle">
+                    No hidden costs, no subscriptions, completely free forever
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h3>Self-Hosted</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">0</span>
+                        <span class="period">/forever</span>
+                    </div>
+                    <p class="pricing-description">Full access to all features, host it yourself</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> All exchanges supported</li>
+                        <li><i class="fas fa-check"></i> Unlimited scanning</li>
+                        <li><i class="fas fa-check"></i> Full source code</li>
+                        <li><i class="fas fa-check"></i> Community support</li>
+                        <li><i class="fas fa-check"></i> Regular updates</li>
+                        <li><i class="fas fa-check"></i> MIT License</li>
+                    </ul>
+                    <a href="https://github.com/Siraj637909/crypto-arbitrage-pro" target="_blank" class="btn btn-primary btn-block">
+                        <i class="fab fa-github"></i> Get Started
+                    </a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Cloud Hosted</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">Coming Soon</span>
+                    </div>
+                    <p class="pricing-description">Pre-configured cloud deployment</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Managed hosting</li>
+                        <li><i class="fas fa-check"></i> 24/7 monitoring</li>
+                        <li><i class="fas fa-check"></i> Premium support</li>
+                        <li><i class="fas fa-times"></i> Custom integrations</li>
+                        <li><i class="fas fa-times"></i> API access</li>
+                        <li><i class="fas fa-times"></i> White-label option</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary btn-block disabled">
+                        <i class="fas fa-clock"></i> Notify Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="docs" class="docs-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📚 Documentation</span>
+                <h2 class="section-title">Complete Guides & Resources</h2>
+                <p class="section-subtitle">
+                    Everything you need to get started and master the platform
+                </p>
+            </div>
+            <div class="docs-grid">
+                <div class="docs-card">
+                    <div class="docs-icon">📖</div>
+                    <h3>Getting Started</h3>
+                    <p>Installation, configuration, and first steps</p>
+                    <a href="https://github.com/Siraj637909/crypto-arbitrage-pro#readme" target="_blank" class="docs-link">
+                        Read Guide <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="docs-card">
+                    <div class="docs-icon">🔧</div>
+                    <h3>API Reference</h3>
+                    <p>Exchange API integration details</p>
+                    <a href="#" class="docs-link">
+                        View API <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="docs-card">
+                    <div class="docs-icon">🚀</div>
+                    <h3>Deployment</h3>
+                    <p>Docker, VPS, and cloud deployment guides</p>
+                    <a href="#" class="docs-link">
+                        Deploy Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="docs-card">
+                    <div class="docs-icon">📊</div>
+                    <h3>Project Report</h3>
+                    <p>Complete final year project documentation</p>
+                    <a href="../PROJECT_REPORT.md" target="_blank" class="docs-link">
+                        View Report <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Arbitrage Trading?</h2>
+                <p>Join hundreds of users finding profitable opportunities every day</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/Siraj637909/crypto-arbitrage-pro" target="_blank" class="btn btn-primary btn-large">
+                        <i class="fab fa-github"></i> Star on GitHub
+                    </a>
+                    <a href="#demo" class="btn btn-secondary btn-large">
+                        <i class="fas fa-play"></i> Try Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Crypto Arbitrage Pro</h4>
+                    <p>Real-time cryptocurrency arbitrage scanner for smart traders.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Siraj637909" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/shaikh786678" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#demo">Live Demo</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/Siraj637909/crypto-arbitrage-pro" target="_blank">Documentation</a></li>
+                        <li><a href="../PROJECT_REPORT.md" target="_blank">Project Report</a></li>
+                        <li><a href="#" target="_blank">API Reference</a></li>
+                        <li><a href="#" target="_blank">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">License (MIT)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Crypto Arbitrage Pro. Built with ❤️ by Siraj Shaikh.</p>
+                <p>Final Year Project - Computer Science & Engineering</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
